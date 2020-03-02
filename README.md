@@ -20,7 +20,7 @@ To be able to run the scripts and code listed below, please make sure you have t
 
 To run this all in full, please run the script in the `Attendance` directory: 
 
-`./build-script.sh`
+`./build_script.sh`
 
 If you run into an issue with the permissions of this script, please run `sudo chmod 755 build-script.sh` in the Attendance directory and then try running the above script again.
 
