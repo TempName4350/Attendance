@@ -11,6 +11,11 @@ Jahanvi Patel, Ashley Huynh, Zachary Comps, Christopher White, Elijah Trepper
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4 front-end, Spring Boot backend.
 
 # Instructions to run code
+## Dependencies before you run
+To be able to run the scripts and code listed below, please make sure you have the following installed:
+* Apache Maven: https://maven.apache.org/install.html
+* Node.js: https://nodejs.org/en/download/
+
 ## To run full app, front-end and back-end
 
 To run this all in full, please run the script in the `Attendance` directory: 
