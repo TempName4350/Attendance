@@ -19,7 +19,8 @@ To run this all in full, please run the script in the `Attendance` directory:
 
 If you run into an issue with the permissions of this script, please run `sudo chmod 755 build-script.sh` in the Attendance directory and then try running the above script again.
 
-Then navigate to: `localhost:8080` in your browser. You should see the app.
+Then navigate to: `localhost:8080` in your browser. You should see the app and as of right now it should look something like this:
+<img width="904" alt="Screen Shot 2020-03-02 at 1 31 58 PM" src="https://user-images.githubusercontent.com/60479090/75705991-75cf8d00-5c8a-11ea-846e-7bb6d83abbd8.png">
 
 Please note: with this script, live changes on the front-end (any files in `src/main/angularclient`) will not be reflected unless you rerun this script. This is to build the front-end as static files as is in the `angularclient` folder and connect it to the spring-boot backend which is normally done by running `mvn spring-boot:run`
 
