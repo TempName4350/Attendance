@@ -32,6 +32,8 @@ To run and view live changes in the front-end, do the following in a terminal wi
 
 KEEP IN MIND this may take a while to produce any output after running the command. Something should come up eventually that says "0% compiling"... and increments. If it's been ~10 mins or so and this doesn't come up, terminate the script and try again.
 
+If you run into an issue with the permissions of this script, please run `sudo chmod 755 frontend-build-script.sh` in the Attendance directory and then try running the above script again.
+
 The front end server ONLY will launch on port 4200 and you can view live UI updates. It should launch automatically after running the script. You can also view it manually at `localhost:4200` once you've run the script if it doesn't launch. If the script for some reason is not working, please try the following commands instead:
 
 `cd src/main/angularclient`
