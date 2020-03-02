@@ -15,6 +15,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 To run this all in full, please run the script in the `Attendance` directory: 
 `./build-script.sh`
+If you run into an issue with the permissions of this script, please run `sudo chmod 755 build-script.sh` in the Attendance directory and then try running the above script again.
 
 Then navigate to: `localhost:8080` in your browser. You should see the app.
 
