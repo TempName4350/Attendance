@@ -33,7 +33,7 @@ Please note: with this script, live changes on the front-end (any files in `src/
 
 To run and view live changes in the front-end, do the following in a terminal window from the Attendance folder:
 
-`./frontend-build-script`
+`./frontend-build-script.sh`
 
 KEEP IN MIND this may take a while to produce any output after running the command. Something should come up eventually that says "0% compiling"... and increments. If it's been ~10 mins or so and this doesn't come up, terminate the script and try again.
 
