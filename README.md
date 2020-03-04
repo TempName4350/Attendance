@@ -15,6 +15,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 To be able to run the scripts and code listed below, please make sure you have the following installed:
 * Apache Maven: https://maven.apache.org/install.html
 * Node.js: https://nodejs.org/en/download/
+* Once Node is installed, make sure you have the most recent version of Angular to run the front-end:
+  `npm install -g @angular/cli`
 
 ## To run full app, front-end and back-end
 
