@@ -10,7 +10,7 @@ Jahanvi Patel, Ashley Huynh, Zachary Comps, Christopher White, Elijah Trepper
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4 front-end, Spring Boot backend.
 
-# Instructions to run code
+# Instructions to run application (Development - in IntelliJ)
 ## To run in IntelliJ (gets all dependencies)
 First and foremost -- you will need a Github account and you will need to be added as a contributor to this repo. To be added as a contributor once you have this account, reach out to Ashley and she can add you.
 
@@ -43,6 +43,7 @@ You should be good to go to work on the project at this point! Please note that 
 
 Please note -- when you push up changes, it will create something called a "pull request". You must come into the repository and approve the pull request in order to actually see the changes update in the main repo here at https://github.com/TempName4350/Attendance. 
 
+# Instructions to run application (User)
 ## Dependencies before you run
 To be able to run the scripts and code listed below, please make sure you have the following installed:
 * Apache Maven: https://maven.apache.org/install.html
