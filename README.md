@@ -12,11 +12,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Instructions to run application (Development - in IntelliJ)
 ## To run in IntelliJ (gets all dependencies)
-First and foremost -- you will need a Github account and you will need to be added as a contributor to this repo. To be added as a contributor once you have this account, reach out to Ashley and she can add you.
+First and foremost -- you will need:
+* a Github account
+* to be added as a contributor to this repo
+(To be added as a contributor once you have this account, reach out to Ashley and she can add you.)
+* IntelliJ
+(As a student, you can get a free license (https://www.jetbrains.com/community/education/) and then install IntelliJ from there)
 
-You will also need IntelliJ. As a student, you can get a free license (https://www.jetbrains.com/community/education/) and then install IntelliJ from there.
-
-Once you have accomplished both above, fork this repository. Do this by clicking the "Fork" button at the top. You will be taken to your own copy of this repository under your own account.
+Once you have accomplished all the things listed above, fork this repository. Do this by clicking the "Fork" button at the top. You will be taken to your own copy of this repository under your own account.
 
 1. Launch IntelliJ. When you get to the screen below, select "Get from Version Control":
 <img width="776" alt="Screen Shot 2020-03-05 at 10 11 46 PM" src="https://user-images.githubusercontent.com/60479090/76046752-c9620500-5f2e-11ea-86ff-27da9330c999.png">
@@ -31,7 +34,9 @@ Once you have accomplished both above, fork this repository. Do this by clicking
 
 4. The project you imported is the full project code. To run different parts of the project, select this dropdown:
 <img width="1259" alt="Screen Shot 2020-03-05 at 10 13 53 PM" src="https://user-images.githubusercontent.com/60479090/76046853-11812780-5f2f-11ea-951f-1776a4c8ae20.png">
+
 You'll want to select Spring Boot (Maven) to run the full backend and frontend below together on `localhost:8080`. For just frontend (to see changes as you make them in the front end with no backend connection), you can select the "Angular CLI Server" option.
+
 
 5. You might notice there are some popups in the bottom right corner asking you to install certain things -- these are project dependencies and are very important. Please install these pop-ups as they come. There will likely be one to install npm, one to set up your Angular framework for your project, and so on. Keep paying attention to these prompts until they disappear. They will look like the below:
 <img width="1258" alt="Screen Shot 2020-03-05 at 10 14 12 PM" src="https://user-images.githubusercontent.com/60479090/76047100-c9163980-5f2f-11ea-9f55-5a66c1975541.png">
