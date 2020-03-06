@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9ee629fd-8005-4ff6-9a78-5454199de857" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Attendance.ipr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attendance.iws" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PaperlessAttendance.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/com/PaperlessAttendance/PaperlessAttendance/PaperlessAttendanceApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/com/PaperlessAttendance/PaperlessAttendance/controllers/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/com/PaperlessAttendance/PaperlessAttendance/entities/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/main/com/PaperlessAttendance/PaperlessAttendance/repositories/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/PaperlessAttendance/PaperlessAttendance/PaperlessAttendanceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/PaperlessAttendance/PaperlessAttendance/PaperlessAttendanceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/PaperlessAttendance/PaperlessAttendance/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/PaperlessAttendance/PaperlessAttendance/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/PaperlessAttendance/PaperlessAttendance/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/PaperlessAttendance/PaperlessAttendance/entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/PaperlessAttendance/PaperlessAttendance/repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/PaperlessAttendance/PaperlessAttendance/repositories/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/PaperlessAttendance/PaperlessAttendance/PaperlessAttendanceApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/PaperlessAttendance/PaperlessAttendance/PaperlessAttendanceApplicationTests.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Yjd1j4QPGUcXy115X3THYzmmbl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/src/main/angularclient/node_modules/protractor" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager" selected="Maven.Maven Spring Boot">
+    <list>
+      <item itemvalue="JavaScript Debug.Angular Application (angularclient)" />
+      <item itemvalue="Maven.Maven Spring Boot" />
+      <item itemvalue="npm.Angular CLI Server (angularclient)" />
+      <item itemvalue="Protractor.E2E Tests (angularclient)" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9ee629fd-8005-4ff6-9a78-5454199de857" name="Default Changelist" comment="" />
+      <created>1583459723646</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583459723646</updated>
+      <workItem from="1583459725165" duration="1319000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="101" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583461217304">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="101" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777@0.23.1280.777" timestamp="1583461217304" />
+    <state x="374" y="182" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1583459770857">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="374" y="182" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1280.777@0.23.1280.777" timestamp="1583459770857" />
+    <state width="1218" height="38" key="GridCell.Tab.0.bottom" timestamp="1583461016005">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1218" height="38" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1583461016005" />
+    <state width="1218" height="38" key="GridCell.Tab.0.center" timestamp="1583461016003">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1218" height="38" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1583461016003" />
+    <state width="1218" height="38" key="GridCell.Tab.0.left" timestamp="1583461016002">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1218" height="38" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1583461016002" />
+    <state width="1218" height="38" key="GridCell.Tab.0.right" timestamp="1583461016004">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1218" height="38" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1583461016004" />
+    <state width="1218" height="184" key="GridCell.Tab.1.bottom" timestamp="1583460219426">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1218" height="184" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1583460219426" />
+    <state width="1218" height="184" key="GridCell.Tab.1.center" timestamp="1583460219425">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1218" height="184" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1583460219425" />
+    <state width="1218" height="184" key="GridCell.Tab.1.left" timestamp="1583460219424">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1218" height="184" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1583460219424" />
+    <state width="1218" height="184" key="GridCell.Tab.1.right" timestamp="1583460219425">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1218" height="184" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1583460219425" />
+    <state width="1218" height="229" key="GridCell.Tab.2.bottom" timestamp="1583460185506">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1218" height="229" key="GridCell.Tab.2.bottom/0.23.1280.777@0.23.1280.777" timestamp="1583460185506" />
+    <state width="1218" height="229" key="GridCell.Tab.2.center" timestamp="1583460185505">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1218" height="229" key="GridCell.Tab.2.center/0.23.1280.777@0.23.1280.777" timestamp="1583460185505" />
+    <state width="1218" height="229" key="GridCell.Tab.2.left" timestamp="1583460185504">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1218" height="229" key="GridCell.Tab.2.left/0.23.1280.777@0.23.1280.777" timestamp="1583460185504" />
+    <state width="1218" height="229" key="GridCell.Tab.2.right" timestamp="1583460185505">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1218" height="229" key="GridCell.Tab.2.right/0.23.1280.777@0.23.1280.777" timestamp="1583460185505" />
+  </component>
+</project>

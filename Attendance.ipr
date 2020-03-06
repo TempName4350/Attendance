@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="InspectionProjectProfileManager">
+    <profile version="1.0">
+      <option name="myName" value="Project Default" />
+    </profile>
+    <version value="1.0" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/src/main/main.iml" filepath="$PROJECT_DIR$/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/test/test.iml" filepath="$PROJECT_DIR$/src/test/test.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="Angular Application (angularclient)" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration default="false" name="Angular CLI Server (angularclient)" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/src/main/angularclient/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration default="false" name="E2E Tests (angularclient)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/src/main/angularclient/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-package value="$PROJECT_DIR$/src/main/angularclient/node_modules/protractor" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration default="false" name="Maven Spring Boot" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="spring-boot:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
+  <component name="libraryTable">
+    <library name="dependency">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/target/dependency/jul-to-slf4j-1.7.30.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/classmate-1.5.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/javassist-3.24.0-GA.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-jdbc-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/dom4j-2.1.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/jakarta.xml.bind-api-2.3.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/jboss-logging-3.4.1.Final.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/jakarta.persistence-api-2.2.3.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/istack-commons-runtime-3.0.8.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-web-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-context-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-beans-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/mysql-connector-java-8.0.19.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/jackson-core-2.10.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/snakeyaml-1.25.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/jackson-datatype-jdk8-2.10.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/antlr-2.7.7.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/tomcat-embed-core-9.0.31.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/javax.persistence-api-2.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/jaxb-runtime-2.3.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-boot-starter-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-boot-starter-aop-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-boot-starter-validation-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/jackson-datatype-jsr310-2.10.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-boot-starter-jdbc-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/tomcat-embed-el-9.0.31.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-boot-starter-data-jpa-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-boot-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-core-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/hibernate-validator-6.0.18.Final.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/logback-classic-1.2.3.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/jandex-2.1.1.Final.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/jakarta.validation-api-2.0.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/h2-1.4.197.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-aop-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-tx-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-boot-starter-web-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/stax-ex-1.8.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-boot-starter-tomcat-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/tomcat-embed-websocket-9.0.31.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-expression-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/HikariCP-3.4.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/byte-buddy-1.10.8.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-data-commons-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/log4j-to-slf4j-2.12.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/jackson-annotations-2.10.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/aspectjrt-1.9.5.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/slf4j-api-1.7.30.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/jackson-databind-2.10.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-data-jpa-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-aspects-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/logback-core-1.2.3.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/hibernate-core-5.4.12.Final.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-boot-autoconfigure-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-orm-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/txw2-2.3.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-boot-starter-json-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/FastInfoset-1.2.16.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/jackson-module-parameter-names-2.10.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-jcl-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/jakarta.transaction-api-1.3.3.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-webmvc-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/aspectjweaver-1.9.5.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/spring-boot-starter-logging-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/jakarta.annotation-api-1.3.5.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/log4j-api-2.12.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/jakarta.activation-api-1.2.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/dependency/hibernate-commons-annotations-5.1.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="dependency1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/log4j-api-2.12.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/jackson-databind-2.10.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-boot-starter-json-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/jakarta.transaction-api-1.3.3.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/jakarta.activation-api-1.2.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-boot-starter-logging-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-boot-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/jackson-datatype-jsr310-2.10.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-orm-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/tomcat-embed-websocket-9.0.31.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/javax.persistence-api-2.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/tomcat-embed-el-9.0.31.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-data-commons-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/HikariCP-3.4.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-core-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/h2-1.4.197.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-webmvc-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/jaxb-runtime-2.3.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-aspects-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/jakarta.persistence-api-2.2.3.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-aop-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/hibernate-core-5.4.12.Final.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/mysql-connector-java-8.0.19.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/log4j-to-slf4j-2.12.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/jackson-annotations-2.10.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/jackson-core-2.10.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/hibernate-validator-6.0.18.Final.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-boot-starter-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/txw2-2.3.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-context-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/byte-buddy-1.10.8.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-boot-starter-data-jpa-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/tomcat-embed-core-9.0.31.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/logback-classic-1.2.3.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/istack-commons-runtime-3.0.8.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/jakarta.annotation-api-1.3.5.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-beans-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-boot-starter-tomcat-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/jakarta.xml.bind-api-2.3.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-boot-autoconfigure-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/snakeyaml-1.25.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/antlr-2.7.7.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/slf4j-api-1.7.30.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/jboss-logging-3.4.1.Final.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/jandex-2.1.1.Final.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/hibernate-commons-annotations-5.1.0.Final.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-jcl-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-boot-starter-aop-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-data-jpa-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/aspectjrt-1.9.5.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-jdbc-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-boot-starter-web-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-boot-starter-validation-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-tx-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/classmate-1.5.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/jackson-datatype-jdk8-2.10.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/FastInfoset-1.2.16.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-boot-starter-jdbc-2.2.5.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-expression-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/stax-ex-1.8.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/logback-core-1.2.3.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/dom4j-2.1.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/aspectjweaver-1.9.5.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/spring-web-5.2.4.RELEASE.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/javassist-3.24.0-GA.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/jackson-module-parameter-names-2.10.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/jul-to-slf4j-1.7.30.jar!/" />
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/dependency/jakarta.validation-api-2.0.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="PaperlessAttendance-0.0.1-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/target/heroku/app/target/PaperlessAttendance-0.0.1-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="PaperlessAttendance-0.0.1-SNAPSHOT1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/target/PaperlessAttendance-0.0.1-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+  </component>
+</project>
