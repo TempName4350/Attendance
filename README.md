@@ -11,6 +11,38 @@ Jahanvi Patel, Ashley Huynh, Zachary Comps, Christopher White, Elijah Trepper
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4 front-end, Spring Boot backend.
 
 # Instructions to run code
+## To run in IntelliJ (gets all dependencies)
+First and foremost -- you will need a Github account and you will need to be added as a contributor to this repo. To be added as a contributor once you have this account, reach out to Ashley and she can add you.
+
+You will also need IntelliJ. As a student, you can get a free license (https://www.jetbrains.com/community/education/) and then install IntelliJ from there.
+
+Once you have accomplished both above, fork this repository. Do this by clicking the "Fork" button at the top. You will be taken to your own copy of this repository under your own account.
+
+1. Launch IntelliJ. When you get to the screen below, select "Get from Version Control":
+<img width="776" alt="Screen Shot 2020-03-05 at 10 11 46 PM" src="https://user-images.githubusercontent.com/60479090/76046752-c9620500-5f2e-11ea-86ff-27da9330c999.png">
+
+2. You will then see this screen. Under "url", paste in the URL from your Forked repository of the TempName4350/Attendance repo.
+<img width="775" alt="Screen Shot 2020-03-05 at 10 12 25 PM" src="https://user-images.githubusercontent.com/60479090/76046757-ce26b900-5f2e-11ea-9bd2-473ae56a1ab9.png">
+
+3. Then, you will see the following. Select "Yes" once ready.
+<img width="782" alt="Screen Shot 2020-03-05 at 10 12 33 PM" src="https://user-images.githubusercontent.com/60479090/76046826-fb736700-5f2e-11ea-8d50-b05d455f482a.png">
+
+<img width="777" alt="Screen Shot 2020-03-05 at 10 13 36 PM" src="https://user-images.githubusercontent.com/60479090/76046833-00d0b180-5f2f-11ea-96e4-2fce1b02de7d.png">
+
+4. The project you imported is the full project code. To run different parts of the project, select this dropdown:
+<img width="1259" alt="Screen Shot 2020-03-05 at 10 13 53 PM" src="https://user-images.githubusercontent.com/60479090/76046853-11812780-5f2f-11ea-951f-1776a4c8ae20.png">
+You'll want to select Spring Boot (Maven) to run the full backend and frontend below together on `localhost:8080`. For just frontend (to see changes as you make them in the front end with no backend connection), you can select the "Angular CLI Server" option.
+
+5. You might notice there are some popups in the bottom right corner asking you to install certain things -- these are project dependencies and are very important. Please install these pop-ups as they come. There will likely be one to install npm, one to set up your Angular framework for your project, and so on. Keep paying attention to these prompts until they disappear. They will look like the below:
+<img width="1258" alt="Screen Shot 2020-03-05 at 10 14 12 PM" src="https://user-images.githubusercontent.com/60479090/76047100-c9163980-5f2f-11ea-9f55-5a66c1975541.png">
+
+6. Once you have all dependencies, frameworks, and modules properly recognized to be able to run the frontend and backend together, the "play" button next to the dropdown in Step 4 will turn green as below:
+<img width="232" alt="Screen Shot 2020-03-05 at 10 23 49 PM" src="https://user-images.githubusercontent.com/60479090/76047181-07abf400-5f30-11ea-810e-5a508c1d5240.png">
+
+You should be good to go to work on the project at this point! Please note that this process clones this Github repo with all the needed tools set up, so you are working on your own local version of this project. Here are some instructions on how to use Github with IntelliJ: https://www.jetbrains.com/help/idea/manage-projects-hosted-on-github.html and also a tutorial on how to use Github: https://guides.github.com/activities/hello-world/.
+
+Please note -- when you push up changes, it will create something called a "pull request". You must come into the repository and approve the pull request in order to actually see the changes update in the main repo here at https://github.com/TempName4350/Attendance. 
+
 ## Dependencies before you run
 To be able to run the scripts and code listed below, please make sure you have the following installed:
 * Apache Maven: https://maven.apache.org/install.html
