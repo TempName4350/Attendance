@@ -39,7 +39,7 @@ You'll want to select Spring Boot (Maven) to run the full backend and frontend b
 6. Once you have all dependencies, frameworks, and modules properly recognized to be able to run the frontend and backend together, the "play" button next to the dropdown in Step 4 will turn green as below:
 <img width="232" alt="Screen Shot 2020-03-05 at 10 23 49 PM" src="https://user-images.githubusercontent.com/60479090/76047181-07abf400-5f30-11ea-810e-5a508c1d5240.png">
 
-You should be good to go to work on the project at this point! Please note that this process clones this Github repo with all the needed tools set up, so you are working on your own local version of this project. Here are some instructions on how to use Github with IntelliJ: https://www.jetbrains.com/help/idea/manage-projects-hosted-on-github.html and also a tutorial on how to use Github: https://guides.github.com/activities/hello-world/.
+You should be good to go to work on the project at this point! Please note that this process clones this Github repo with all the needed tools set up, so you are working on your own local version of this project. Here are some instructions on how to use Github with IntelliJ: https://www.jetbrains.com/help/idea/manage-projects-hosted-on-github.html and also a tutorial on how to use Github: https://rogerdudler.github.io/git-guide/.
 
 Please note -- when you push up changes, it will create something called a "pull request". You must come into the repository and approve the pull request in order to actually see the changes update in the main repo here at https://github.com/TempName4350/Attendance. 
 
