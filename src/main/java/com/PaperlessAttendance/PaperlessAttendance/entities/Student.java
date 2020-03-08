@@ -7,6 +7,9 @@ import javax.persistence.Id;
 import javax.persistence.Column;
 import javax.persistence.Table;
 
+import com.opencsv.bean.CsvBindByName;
+import com.opencsv.bean.CsvBindByPosition;
+
 @Entity
 @Table(name="student")
 public class Student {
@@ -14,44 +17,48 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.AUTO)
 
     @Column(name="pantherID")
-    private final String pantherID;
+    @CsvBindByPosition(position = 1)
+    private final int pantherID;
 
     @Column(name="studentFirstName")
+    @CsvBindByPosition(position = 0)
     private final String studentFirstName;
 
     @Column(name="studentLastName")
+    @CsvBindByPosition(position = 2)
     private final String studentLastName;
 
     @Column(name="studentEmail")
+    @CsvBindByPosition(position = 3)
     private final String studentEmail;
     
     public Student() {
         this.studentFirstName = "";
         this.studentLastName = "";
         this.studentEmail = "";
-        this.pantherID = "";
+        this.pantherID = 0;
     }
     
-    public Student(String firstName, String lastName, String email, String id) {
+    public Student(String firstName, String lastName, String email, int id) {
         this.studentFirstName = firstName;
         this.studentLastName = lastName;
         this.studentEmail = email;
         this.pantherID = id;
     }
 
-    public String getId() {
+    public int getPantherID() {
         return pantherID;
     }
     
-    public String getFirstName() {
+    public String getStudentFirstName() {
         return studentFirstName;
     }
 
-    public String getLastName() {
+    public String getStudentLastName() {
         return studentLastName;
     }
     
-    public String getEmail() {
+    public String getStudentEmail() {
         return studentEmail;
     }
     

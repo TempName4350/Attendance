@@ -1,6 +1,6 @@
 export class Student {
-    id: string;
-    firstName: string;
-    lastName: string;
-    email: string;
+    pantherID: number;
+    studentFirstName: string;
+    studentLastName: string;
+    studentEmail: string;
 }

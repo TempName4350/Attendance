@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { StudentServiceService } from './service/student-service.service';
 import { UploadStudentsComponent } from './upload-students/upload-students.component';
+import { ExportStudentsComponent } from './export-students/export-students.component';
  
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
-    UploadStudentsComponent
+    UploadStudentsComponent,
+    ExportStudentsComponent
   ],
   imports: [
     BrowserModule,
