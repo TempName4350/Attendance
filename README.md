@@ -87,7 +87,7 @@ The front end server ONLY will launch on port 4200 and you can view live UI upda
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component (must be in `src/main/angularclient`). You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name` to generate a new component (must be in `src/main/angularclient/src/app/`). You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Running unit tests
 
