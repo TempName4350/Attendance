@@ -1,4 +1,5 @@
 com/PaperlessAttendance/PaperlessAttendance/PaperlessAttendanceApplication.class
-com/PaperlessAttendance/PaperlessAttendance/repositories/UserRepository.class
-com/PaperlessAttendance/PaperlessAttendance/controllers/UserController.class
-com/PaperlessAttendance/PaperlessAttendance/entities/User.class
+com/PaperlessAttendance/PaperlessAttendance/controllers/StudentController.class
+com/PaperlessAttendance/PaperlessAttendance/PaperlessAttendanceApplication$1.class
+com/PaperlessAttendance/PaperlessAttendance/entities/Student.class
+com/PaperlessAttendance/PaperlessAttendance/repositories/StudentRepository.class

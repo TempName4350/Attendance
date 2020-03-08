@@ -5,14 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { UserListComponent } from './user-list/user-list.component';
-import { UserFormComponent } from './user-form/user-form.component';
-import { UserServiceService } from './service/user-service.service';
+import { StudentServiceService } from './service/student-service.service';
+import { UploadStudentsComponent } from './upload-students/upload-students.component';
  
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
-    UserFormComponent
+    UploadStudentsComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +20,7 @@ import { UserServiceService } from './service/user-service.service';
     HttpClientModule,
     FormsModule
   ],
-  providers: [UserServiceService],
+  providers: [StudentServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

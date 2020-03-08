@@ -1,4 +1,4 @@
-/Users/ashleyhuynh/Documents/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/repositories/UserRepository.java
-/Users/ashleyhuynh/Documents/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/entities/User.java
+/Users/ashleyhuynh/Documents/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/repositories/StudentRepository.java
 /Users/ashleyhuynh/Documents/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/PaperlessAttendanceApplication.java
-/Users/ashleyhuynh/Documents/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/controllers/UserController.java
+/Users/ashleyhuynh/Documents/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/entities/Student.java
+/Users/ashleyhuynh/Documents/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/controllers/StudentController.java

@@ -1,0 +1,16 @@
+<div class="container">
+
+  <div align="center">
+    <h2 class="card-title text-center text-black py-2">Upload Students</h2>
+    <br>
+  </div>
+    <ul class="text-center list-inline py-2">
+      <li class="list-inline-item">
+        <input type="file" id="file" accept=".csv" class="btn btn-info" (change)="handleFileInput($event.target.files)"/>
+      </li>
+      <li class="list-inline-item">
+      <button type="submit" [disabled]="!fileToUpload"
+                class="btn btn-info">Upload File</button>
+      </li>
+    </ul>
+</div>
