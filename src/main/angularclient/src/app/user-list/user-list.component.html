@@ -1,6 +1,19 @@
 <div align="center">
   <h2 class="card-title text-center text-black py-2">Student List</h2>
-  <br>
+</div>
+<div align="center" *ngIf="showSuccessMsg">
+  <div class="col-xs-12">
+    <p class="alert alert-success">
+        <strong>Successfully uploaded!</strong> You can now view added students in the list or reload to submit a new file.
+    </p>
+  </div>
+</div>
+<div align="center" *ngIf="showErrorMsg">
+  <div class="col-xs-12">
+    <p class="alert alert-danger">
+        <strong>Could not upload students!</strong> Please try again by clicking "reload" and submiting a new file.
+    </p>
+  </div>
 </div>
 <div class="card my-5">
   <div class="card-body">

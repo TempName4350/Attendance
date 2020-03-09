@@ -18,7 +18,7 @@ public class Student {
 
     @Column(name="pantherID")
     @CsvBindByPosition(position = 1)
-    private final int pantherID;
+    private final long pantherID;
 
     @Column(name="studentFirstName")
     @CsvBindByPosition(position = 0)
@@ -39,14 +39,14 @@ public class Student {
         this.pantherID = 0;
     }
     
-    public Student(String firstName, String lastName, String email, int id) {
+    public Student(String firstName, String lastName, String email, long id) {
         this.studentFirstName = firstName;
         this.studentLastName = lastName;
         this.studentEmail = email;
         this.pantherID = id;
     }
 
-    public int getPantherID() {
+    public long getPantherID() {
         return pantherID;
     }
     
