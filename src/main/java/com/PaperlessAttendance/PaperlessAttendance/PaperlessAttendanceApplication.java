@@ -4,6 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.PaperlessAttendance.PaperlessAttendance.entities.Student;
 import com.PaperlessAttendance.PaperlessAttendance.repositories.StudentRepository;
+import com.PaperlessAttendance.PaperlessAttendance.entities.Teacher;
+import com.PaperlessAttendance.PaperlessAttendance.repositories.TeacherRepository;
 import java.util.stream.Stream;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

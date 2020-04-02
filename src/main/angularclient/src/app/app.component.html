@@ -1,20 +1,18 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="card bg-dark my-5">
-        <div class="card-body">
-          <h2 class="card-title text-center text-white py-3">{{ title }}</h2>
-          <ul class="text-center list-inline py-2">
-            <li class="list-inline-item">
-                <a routerLink="/users" class="btn btn-info">View Students</a>
-              </li>
-            <li class="list-inline-item">
-              <a routerLink="/uploadstudents" class="btn btn-info">Upload Students</a>
-                </li>
-          </ul>
-        </div>
+<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+  <div class="navbar-nav">
+    <a class="nav-item nav-link" routerLink="/home">Home</a>
+    <a class="nav-item nav-link" (click)="logout()">Logout</a>
+  </div>
+</nav>
+
+<!-- main content container -->
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2">
+        <router-outlet></router-outlet>
       </div>
-      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
