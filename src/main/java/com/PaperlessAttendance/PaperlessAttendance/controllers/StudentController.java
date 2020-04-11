@@ -73,33 +73,59 @@ public class StudentController {
                                              CSVWriter.DEFAULT_LINE_END); 
     
             // adding header to csv 
-            String[] header = { "panther ID", "dates present"}; 
+            String[] header = { "panther ID", "dates present", "dates not present"}; 
             writer.writeNext(header);
 
             Iterable<Student> studentIterable = studentRepository.findAll();
             List<String[]> outputData = new ArrayList<String[]>();
-            for (Iterator<Student> i = studentIterable.iterator(); i.hasNext(); )  { // go through students
+            Iterator<Student> i = studentIterable.iterator(); 
+            while (i.hasNext())  { // go through students
                 Student s = i.next();
                 List<Long> pantherID = Arrays.asList(s.getPantherID());
-                List<String> dates = new ArrayList<>();
-                Iterable<Attendance> hi = attendanceRepository.findAllById(pantherID);
-                for (Iterator<Attendance> h = hi.iterator(); h.hasNext(); ) {
+                List<String> datesPresent = new ArrayList<>();
+                List<String> datesNotPresent = new ArrayList<>();
+
+                Iterable<Attendance> attendanceForID = attendanceRepository.findAll();
+                Iterator<Attendance> h = attendanceForID.iterator();
+                int attendanceSize = 0;
+                // go through attendance record 
+                while (h.hasNext()) {
+                    attendanceSize++;
                     Attendance a = h.next();
-                    List<Long> dateID = Arrays.asList(a.getDateID());
-                    Iterable<DateAttend> yo = dateAttendRepository.findAllById(dateID);
-                    for (Iterator<DateAttend> b = yo.iterator(); b.hasNext(); ) {
-                        DateAttend d = b.next();
-                        dates.add(d.getDate());
-                    }
-                }
-                String dateString = dates.stream()
+                    // if the panther id of attendance record matches student panther id, then let's get the date for it
+                    if (a.getPantherID() == s.getPantherID()) {
+                        List<Long> dateID = Arrays.asList(a.getDateID());
+                        Iterable<DateAttend> dateAttendForAttendance = dateAttendRepository.findAllById(dateID);
+                        Iterator<DateAttend> b = dateAttendForAttendance.iterator();
+                        // find the date for the attendance record
+                        while (b.hasNext()) {
+                            DateAttend d = b.next();
+                            System.out.println(d.getAttended().getClass());
+                            // get the date, if they were present or not
+                            if (d.getAttended().equals("yes")) {
+                                datesPresent.add(d.getDate());
+                            } else {
+                                datesNotPresent.add(d.getDate());
+                            }
+                            System.out.println(d.getDate());
+                        } // exit date loop
+                    } // exit condutional attendance
+                } // exit attendance
+
+                // now print out info for student
+                System.out.println("attendance size for pantherID " + String.valueOf(pantherID) + " is " + String.valueOf(attendanceSize));
+                String datePresentString = datesPresent.stream()
+                    .map(n -> String.valueOf(n))
+                    .collect(Collectors.joining(",", "", ""));
+                
+                 String dateNotPresentString = datesNotPresent.stream()
                     .map(n -> String.valueOf(n))
                     .collect(Collectors.joining(",", "", ""));
                 
                 String pantherIDString = pantherID.stream()
                     .map(n -> String.valueOf(n))
                     .collect(Collectors.joining("", "", ""));
-                String[] data = {pantherIDString, dateString};
+                String[] data = {pantherIDString, datePresentString, dateNotPresentString};
 
                 outputData.add(data);
             }
