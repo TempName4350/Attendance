@@ -6,7 +6,6 @@ import { ExportStudentsComponent } from './export-students/export-students.compo
 import { LoginComponent } from './login';
 import { HomeComponent } from './home';
 import { AuthGuard } from './_helpers';
-import {RegisterComponent} from './register/register.component';
 
 
 const routes: Routes = [
@@ -16,9 +15,6 @@ const routes: Routes = [
   { path: 'uploadstudents', component: UploadStudentsComponent, canActivate: [AuthGuard]},
   { path: 'exportstudents', component: ExportStudentsComponent, canActivate: [AuthGuard]},
   { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
-
-
 
   { path: '**', redirectTo: 'home' }
 
