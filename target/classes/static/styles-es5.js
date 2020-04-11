@@ -353,7 +353,7 @@
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! /Users/ashleyhuynh/Documents/Attendance/src/main/angularclient/src/styles.css */
+    /*! /Users/Cjay/IdeaProjects/Attendance/src/main/angularclient/src/styles.css */
     "./src/styles.css");
     /***/
   }
