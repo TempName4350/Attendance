@@ -67,7 +67,7 @@ public class StudentController {
                 "attachment; filename=\"" + filename + "\"");
         PrintWriter out = response.getWriter();
         try { 
-            CSVWriter writer = new CSVWriter(out, ',', 
+            CSVWriter writer = new CSVWriter(out, ';', 
                                              CSVWriter.NO_QUOTE_CHARACTER, 
                                              CSVWriter.DEFAULT_ESCAPE_CHARACTER, 
                                              CSVWriter.DEFAULT_LINE_END); 
@@ -114,19 +114,17 @@ public class StudentController {
 
                 // now print out info for student
                 System.out.println("attendance size for pantherID " + String.valueOf(pantherID) + " is " + String.valueOf(attendanceSize));
-                String datePresentString = datesPresent.stream()
-                    .map(n -> String.valueOf(n))
-                    .collect(Collectors.joining(",", "", ""));
+                String datePresentString = String.join(", ", datesPresent);
+                System.out.println(datePresentString);
                 
-                 String dateNotPresentString = datesNotPresent.stream()
-                    .map(n -> String.valueOf(n))
-                    .collect(Collectors.joining(",", "", ""));
+                String dateNotPresentString = String.join(", ", datesNotPresent);
+                System.out.println(dateNotPresentString);
                 
                 String pantherIDString = pantherID.stream()
                     .map(n -> String.valueOf(n))
-                    .collect(Collectors.joining("", "", ""));
+                    .collect(Collectors.joining());
                 String[] data = {pantherIDString, datePresentString, dateNotPresentString};
-
+                System.out.println(Arrays.toString(data));
                 outputData.add(data);
             }
             writer.writeAll(outputData);
