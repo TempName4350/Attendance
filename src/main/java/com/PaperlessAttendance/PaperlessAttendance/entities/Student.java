@@ -1,5 +1,7 @@
 package com.PaperlessAttendance.PaperlessAttendance.entities;
 
+import java.util.ArrayList;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,6 +11,9 @@ import javax.persistence.Table;
 
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvBindByPosition;
+
+import com.PaperlessAttendance.PaperlessAttendance.repositories.AttendanceRepository;
+import com.PaperlessAttendance.PaperlessAttendance.repositories.DateAttendRepository;
 
 @Entity
 @Table(name="student")
@@ -31,7 +36,7 @@ public class Student {
     @Column(name="studentEmail")
     @CsvBindByPosition(position = 3)
     private final String studentEmail;
-    
+
     public Student() {
         this.studentFirstName = "";
         this.studentLastName = "";
