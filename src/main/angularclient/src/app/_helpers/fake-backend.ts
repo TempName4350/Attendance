@@ -3,13 +3,15 @@ import { HttpRequest, HttpResponse, HttpHandler, HttpEvent, HttpInterceptor, HTT
 import { Observable, of, throwError } from 'rxjs';
 import { delay, mergeMap, materialize, dematerialize } from 'rxjs/operators';
 
+import { TeacherServiceService } from '../service/teacher-service.service';
+import { Teacher } from '../model/teacher';
 
 
+const teacherID = 4;
 
-
-let users = JSON.parse(localStorage.getItem('users')) || [];
-
-
+let users = [{ id: 1, firstName: 'Jason', lastName: 'Watmore', username: 'test', password: 'test' },
+             { id: 1, firstName: 'chris', lastName: 'white', username: 'chris', password: 'white' }
+];
 
 
 @Injectable()
@@ -26,19 +28,16 @@ export class FakeBackendInterceptor implements HttpInterceptor {
             .pipe(dematerialize());
 
         function handleRoute() {
-        switch (true) {
-          case url.endsWith('/users/authenticate') && method === 'POST':
-            return authenticate();
-          case url.endsWith('/users/register') && method === 'POST':
-            return register();
-          default:
-            // pass through any requests not handled above
-            return next.handle(request);
+            switch (true) {
+                case url.endsWith('/users/authenticate') && method === 'POST':
+                    return authenticate();
+                default:
+                    // pass through any requests not handled above
+                    return next.handle(request);
+            }
         }
-      }
 
-
-      // route functions
+        // route functions
 
         function authenticate() {
             const { username, password } = body;
@@ -54,20 +53,6 @@ export class FakeBackendInterceptor implements HttpInterceptor {
             });
         }
 
-
-        function register() {
-        const user = body
-
-        if (users.find(x => x.username === user.username)) {
-          return error('Username "' + user.username + '" is already taken')
-        }
-
-        user.id = users.length ? Math.max(...users.map(x => x.id)) + 1 : 1;
-        users.push(user);
-        localStorage.setItem('users', JSON.stringify(users));
-
-        return ok();
-      }
         // helper functions
 
       // tslint:disable-next-line:no-shadowed-variable
