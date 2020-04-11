@@ -11,6 +11,8 @@ import { ExportStudentsComponent } from './export-students/export-students.compo
 import { LoginComponent } from './login';
 import {ErrorInterceptor, fakeBackendProvider, JwtInterceptor} from './_helpers';
 import {HomeComponent} from './home';
+import {RegisterComponent} from './register/register.component';
+import {AttendanceComponent} from './attendance/attendance.component';
 
 
 
@@ -22,7 +24,12 @@ import {HomeComponent} from './home';
     UploadStudentsComponent,
     ExportStudentsComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    RegisterComponent,
+    AttendanceComponent,
+
+
+
 
   ],
   imports: [

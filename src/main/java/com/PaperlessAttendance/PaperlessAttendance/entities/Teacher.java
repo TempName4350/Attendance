@@ -32,18 +32,19 @@ public class Teacher {
     private final String teacherPass;
 
     public Teacher() {
+        this.teacherID = 0;
         this.teacherFirstName = "";
         this.teacherLastName = "";
         this.teacherUser = "";
         this.teacherPass = "";
-        this.teacherID = 0;
+
     }
 
-    public Teacher(String firstName, String lastName, String User, String Pass, long id) {
+    public Teacher(long id, String firstName, String lastName, String username, String password) {
         this.teacherFirstName = firstName;
         this.teacherLastName = lastName;
-        this.teacherUser = User;
-        this.teacherPass = Pass;
+        this.teacherUser = username;
+        this.teacherPass = password;
         this.teacherID = id;
     }
 
