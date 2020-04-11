@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
-import { TeacherServiceService } from '../service/teacher-service.service';
-import { Teacher} from '../model/teacher';
+
 
 import { AuthenticationService } from '../_services';
 
@@ -14,8 +13,10 @@ export class LoginComponent implements OnInit {
     submitted = false;
     returnUrl: string;
     error: string;
+  success: string;
 
-    constructor(
+
+  constructor(
         private formBuilder: FormBuilder,
         private route: ActivatedRoute,
         private router: Router,
@@ -35,6 +36,11 @@ export class LoginComponent implements OnInit {
 
         // get return url from route parameters or default to '/'
         this.returnUrl = this.route.snapshot.queryParams[this.returnUrl] || '/home';
+
+        // show success message on registration
+        if (this.route.snapshot.queryParams.registered) {
+        this.success = 'Registration successful';
+      }
     }
 
     // convenience getter for easy access to form fields
@@ -42,6 +48,10 @@ export class LoginComponent implements OnInit {
 
     onSubmit() {
         this.submitted = true;
+
+      // reset alerts on submit
+        this.error = null;
+        this.success = null;
 
         // stop here if form is invalid
         if (this.loginForm.invalid) {
