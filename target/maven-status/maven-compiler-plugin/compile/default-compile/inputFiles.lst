@@ -1,7 +1,13 @@
 /Users/Cjay/IdeaProjects/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/repositories/StudentRepository.java
+/Users/Cjay/IdeaProjects/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/repositories/AttendanceRepository.java
 /Users/Cjay/IdeaProjects/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/repositories/TeacherRepository.java
 /Users/Cjay/IdeaProjects/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/entities/Teacher.java
 /Users/Cjay/IdeaProjects/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/entities/Student.java
-/Users/Cjay/IdeaProjects/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/PaperlessAttendanceApplication.java
 /Users/Cjay/IdeaProjects/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/controllers/TeacherController.java
+/Users/Cjay/IdeaProjects/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/controllers/DateAttendController.java
+/Users/Cjay/IdeaProjects/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/entities/Attendance.java
+/Users/Cjay/IdeaProjects/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/PaperlessAttendanceApplication.java
+/Users/Cjay/IdeaProjects/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/entities/DateAttend.java
+/Users/Cjay/IdeaProjects/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/controllers/AttendanceController.java
+/Users/Cjay/IdeaProjects/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/repositories/DateAttendRepository.java
 /Users/Cjay/IdeaProjects/Attendance/src/main/java/com/PaperlessAttendance/PaperlessAttendance/controllers/StudentController.java
