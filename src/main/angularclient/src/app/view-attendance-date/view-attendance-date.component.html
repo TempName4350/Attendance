@@ -1,0 +1,20 @@
+<div align="center">
+    <h2 class="card-title text-center text-black py-2">View Attendance for Date {{ dateString }}</h2>
+  </div>
+  <div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Students Present (by PantherID)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let attendance of attendances">
+            <td *ngIf="attendance.dateID == attendanceDateID">{{ attendance.pantherID }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

@@ -1,7 +1,11 @@
 package com.PaperlessAttendance.PaperlessAttendance.controllers;
 
 import com.PaperlessAttendance.PaperlessAttendance.entities.DateAttend;
+import com.PaperlessAttendance.PaperlessAttendance.entities.Attendance;
 import com.PaperlessAttendance.PaperlessAttendance.repositories.DateAttendRepository;
+import com.PaperlessAttendance.PaperlessAttendance.repositories.AttendanceRepository;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.List;
 
 import com.fasterxml.jackson.databind.MappingIterator;
@@ -26,9 +30,16 @@ import org.springframework.web.multipart.MultipartFile;
 public class DateAttendController {
 
     private final DateAttendRepository dateAttendRepository;
+    private final AttendanceRepository attendanceRepository;
 
-    public DateAttendController(DateAttendRepository dateAttendRepository) {
+    public DateAttendController(DateAttendRepository dateAttendRepository, AttendanceRepository attendanceRepository) {
         this.dateAttendRepository = dateAttendRepository;
+        this.attendanceRepository = attendanceRepository;
+    }
+
+    @GetMapping("/viewattendance")
+    public List<DateAttend> getDateAttend() {
+        return (List<DateAttend>) dateAttendRepository.findAll();
     }
 
    }
