@@ -16,7 +16,10 @@ import {ErrorInterceptor, fakeBackendProvider, JwtInterceptor} from './_helpers'
 import {HomeComponent} from './home';
 import { ViewAttendanceComponent } from './view-attendance/view-attendance.component';
 import { ViewAttendanceDateComponent } from './view-attendance-date/view-attendance-date.component';
-
+import {RegisterComponent} from './register/register.component';
+import {AttendanceComponent} from './attendance/attendance.component';
+import {SessionComponent} from './session/session.component';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -29,7 +32,10 @@ import { ViewAttendanceDateComponent } from './view-attendance-date/view-attenda
     LoginComponent,
     HomeComponent,
     ViewAttendanceComponent,
-    ViewAttendanceDateComponent
+    ViewAttendanceDateComponent,
+    RegisterComponent,
+    AttendanceComponent,
+    SessionComponent,
 
   ],
   imports: [
@@ -37,7 +43,8 @@ import { ViewAttendanceDateComponent } from './view-attendance-date/view-attenda
     AppRouting,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CommonModule,
   ],
   providers: [
     AttendanceServiceService,

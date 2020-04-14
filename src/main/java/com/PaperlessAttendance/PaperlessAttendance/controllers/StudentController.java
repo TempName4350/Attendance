@@ -100,31 +100,25 @@ public class StudentController {
                         // find the date for the attendance record
                         while (b.hasNext()) {
                             DateAttend d = b.next();
-                            System.out.println(d.getAttended().getClass());
                             // get the date, if they were present or not
                             if (d.getAttended().equals("yes")) {
                                 datesPresent.add(d.getDate());
                             } else {
                                 datesNotPresent.add(d.getDate());
                             }
-                            System.out.println(d.getDate());
                         } // exit date loop
                     } // exit condutional attendance
                 } // exit attendance
 
                 // now print out info for student
-                System.out.println("attendance size for pantherID " + String.valueOf(pantherID) + " is " + String.valueOf(attendanceSize));
                 String datePresentString = String.join(", ", datesPresent);
-                System.out.println(datePresentString);
                 
                 String dateNotPresentString = String.join(", ", datesNotPresent);
-                System.out.println(dateNotPresentString);
                 
                 String pantherIDString = pantherID.stream()
                     .map(n -> String.valueOf(n))
                     .collect(Collectors.joining());
                 String[] data = {pantherIDString, datePresentString, dateNotPresentString};
-                System.out.println(Arrays.toString(data));
                 outputData.add(data);
             }
             writer.writeAll(outputData);
@@ -145,7 +139,6 @@ public class StudentController {
                 System.out.println(file.getOriginalFilename());
             }
             String content = new String(file.getBytes());
-            System.out.println(content);
             CsvSchema bootstrapSchema = CsvSchema.emptySchema().withHeader();
             CsvMapper mapper = new CsvMapper();
             MappingIterator<Student> readValues = mapper.readerFor(Student.class).with(bootstrapSchema).readValues(content);
