@@ -23,4 +23,6 @@ export class UserService {
     // @ts-ignore
     return this.http.delete(`${config.apiUrl}/users/${id}`);
   }
+
+
 }

@@ -8,6 +8,9 @@ import { HomeComponent } from './home';
 import {ViewAttendanceComponent} from './view-attendance/view-attendance.component';
 import {ViewAttendanceDateComponent} from './view-attendance-date/view-attendance-date.component';
 import { AuthGuard } from './_helpers';
+import {RegisterComponent} from './register/register.component';
+import {AttendanceComponent} from './attendance/attendance.component';
+import {SessionComponent} from './session/session.component';
 
 
 const routes: Routes = [
@@ -19,6 +22,9 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'viewattendance', component: ViewAttendanceComponent },
   { path: 'viewattendancedate', component: ViewAttendanceDateComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'attendance', component: AttendanceComponent, canActivate: [AuthGuard]},
+  { path: 'session', component: SessionComponent, canActivate: [AuthGuard]},
 
   { path: '**', redirectTo: 'home' }
 
