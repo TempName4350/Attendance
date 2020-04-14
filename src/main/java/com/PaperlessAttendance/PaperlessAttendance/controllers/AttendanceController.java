@@ -19,7 +19,11 @@ import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import org.springframework.web.multipart.MultipartFile;
 
-
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
@@ -30,5 +34,11 @@ public class AttendanceController {
     public AttendanceController(AttendanceRepository attendanceRepository) {
         this.attendanceRepository = attendanceRepository;
     }
+
+    @GetMapping("/viewattendancedate")
+    public List<Attendance> getAttendance() {
+        return (List<Attendance>) attendanceRepository.findAll();
+    }
+
 
 }

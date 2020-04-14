@@ -1,0 +1,22 @@
+<div align="center">
+    <h2 class="card-title text-center text-black py-2">View Attendance by Date</h2>
+  </div>
+  <div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let date of dates">
+            <td *ngIf="date.attended == 'yes'">{{ date.date }}</td>
+            <td *ngIf="date.attended == 'yes'"><a [routerLink]="['/viewattendancedate', {attendanceDateID: date.dateID, dateString: date.date}]" class="btn btn-info">View Attendance For This Session</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

@@ -5,6 +5,8 @@ import { UploadStudentsComponent } from './upload-students/upload-students.compo
 import { ExportStudentsComponent } from './export-students/export-students.component';
 import { LoginComponent } from './login';
 import { HomeComponent } from './home';
+import {ViewAttendanceComponent} from './view-attendance/view-attendance.component';
+import {ViewAttendanceDateComponent} from './view-attendance-date/view-attendance-date.component';
 import { AuthGuard } from './_helpers';
 
 
@@ -15,6 +17,8 @@ const routes: Routes = [
   { path: 'uploadstudents', component: UploadStudentsComponent, canActivate: [AuthGuard]},
   { path: 'exportstudents', component: ExportStudentsComponent, canActivate: [AuthGuard]},
   { path: 'login', component: LoginComponent },
+  { path: 'viewattendance', component: ViewAttendanceComponent },
+  { path: 'viewattendancedate', component: ViewAttendanceDateComponent },
 
   { path: '**', redirectTo: 'home' }
 
