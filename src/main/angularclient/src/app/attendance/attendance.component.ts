@@ -16,28 +16,13 @@ export class AttendanceComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        /*this.getPartners().then(data => {
-            return data
-          }).then (data => {
-            this.hey = data
-          })*/
-    }
 
-    getPartners() {
-        /*return new Promise(resolve => {
-          this.dateAttendService.findAll().subscribe(data => {
-            // get all dates
-            this.dateAttend = data;
-            resolve(this.dateAttend);
-          });
-        });*/
-      }
+    }
 
     startSession(): void {
         this.dateAttendService.findAll().subscribe(data => {
             // get all dates
             this.dateAttend = data;
-            console.log(this.dateAttend);
             let maxDateID = 0;
             let todaysDate = new Date();
             let date = this.datepipe.transform(todaysDate, 'yyyy-MM-dd');
