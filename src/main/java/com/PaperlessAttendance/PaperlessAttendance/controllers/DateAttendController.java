@@ -42,4 +42,10 @@ public class DateAttendController {
         return (List<DateAttend>) dateAttendRepository.findAll();
     }
 
+    @PostMapping("/attendance")
+    public void startAttendanceSession (@RequestBody DateAttend dateAttend) {
+        DateAttend newDateAttend = dateAttend;
+        dateAttendRepository.save(newDateAttend);
+    }
+
    }

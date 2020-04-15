@@ -20,7 +20,7 @@ import {RegisterComponent} from './register/register.component';
 import {AttendanceComponent} from './attendance/attendance.component';
 import {SessionComponent} from './session/session.component';
 import { CommonModule } from '@angular/common';
-
+import { DatePipe } from '@angular/common';
 
 
 @NgModule({
@@ -47,6 +47,7 @@ import { CommonModule } from '@angular/common';
     CommonModule,
   ],
   providers: [
+    DatePipe,
     AttendanceServiceService,
     DateAttendServiceService,
     TeacherServiceService,
