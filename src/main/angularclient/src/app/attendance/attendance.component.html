@@ -6,7 +6,8 @@
           <h2 class="card-title text-center text-white py-3">{{ 'hi' }}</h2>
           <ul class="text-center list-inline py-2">
             <li class="list-inline-item">
-              <a routerLink="/session" class="btn btn-info">Start Attendance Session</a>
+              <button (click)="startSession()" type="submit"
+              class="btn btn-info">Start Attendance Session</button>
             </li>
           </ul>
         </div>
