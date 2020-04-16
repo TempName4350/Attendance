@@ -25,11 +25,12 @@ export class ViewAttendanceDateComponent implements OnInit {
     console.log(this.route);
 
     let attendances = this.getPartners().then(data => {
-      return data
+      return data;
     }).then (data => {
       this.hey = data
+      console.log(data)
     })
-    console.log(this.hey)
+    console.log(attendances)
     this.attendanceDateID = this.route.snapshot.params.attendanceDateID;
     this.dateString = this.route.snapshot.params.dateString;
   }

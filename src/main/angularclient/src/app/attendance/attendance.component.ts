@@ -28,12 +28,15 @@ export class AttendanceComponent implements OnInit {
     
             this.dateAttend.forEach(element => {
                 if (element.dateID > maxDateID) {
+                    console.log(element.dateID);
                     maxDateID = element.dateID;
+                    console.log(maxDateID);
                 }
             });
+            console.log(maxDateID);
             // declare new dateAttend record - 
             let newDateAttendPresent = new DateAttend();
-            newDateAttendPresent.dateID = maxDateID + 1;
+            newDateAttendPresent.dateID = maxDateID;
             newDateAttendPresent.attended = "yes";
             newDateAttendPresent.date = this.currentDate;
     
@@ -41,6 +44,9 @@ export class AttendanceComponent implements OnInit {
             newDateAttendAbsent.dateID = newDateAttendPresent.dateID + 1;
             newDateAttendAbsent.attended = "no";
             newDateAttendAbsent.date = this.currentDate;
+
+            console.log(newDateAttendPresent.dateID)
+            console.log(newDateAttendAbsent.dateID)
     
             this.dateAttendService.save(newDateAttendPresent).subscribe(data => {
             });

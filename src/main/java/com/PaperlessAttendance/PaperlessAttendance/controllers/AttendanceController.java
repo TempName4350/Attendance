@@ -2,7 +2,12 @@ package com.PaperlessAttendance.PaperlessAttendance.controllers;
 
 import com.PaperlessAttendance.PaperlessAttendance.entities.Attendance;
 import com.PaperlessAttendance.PaperlessAttendance.repositories.AttendanceRepository;
+import com.PaperlessAttendance.PaperlessAttendance.entities.DateAttend;
+import com.PaperlessAttendance.PaperlessAttendance.repositories.DateAttendRepository;
 import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
 
 import com.fasterxml.jackson.databind.MappingIterator;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -30,9 +35,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 public class AttendanceController {
 
     private final AttendanceRepository attendanceRepository;
+    private final DateAttendRepository dateAttendRepository;
 
-    public AttendanceController(AttendanceRepository attendanceRepository) {
+    public AttendanceController(AttendanceRepository attendanceRepository, DateAttendRepository dateAttendRepository) {
         this.attendanceRepository = attendanceRepository;
+        this.dateAttendRepository = dateAttendRepository;
     }
 
     @GetMapping("/viewattendancedate")
@@ -40,5 +47,34 @@ public class AttendanceController {
         return (List<Attendance>) attendanceRepository.findAll();
     }
 
+    @PostMapping("/session")
+    public void addStudentAttendance (@RequestBody Attendance attendanceRecord) {
+        Attendance attendance = attendanceRecord;
+        attendanceRepository.save(attendance);
+    }
+
+    @GetMapping("/viewstudentattendance")
+    public List<DateAttend> getAttendance(@RequestParam("pantherID") String pantherID) {
+        Long pantherIDInput = Long.parseLong(pantherID);
+
+        Iterable<Attendance> attendanceForID = attendanceRepository.findAll();
+        Iterator<Attendance> h = attendanceForID.iterator();
+        ArrayList<DateAttend> d = new ArrayList<DateAttend>();
+        while (h.hasNext()) {
+            Attendance a = h.next();
+            if (a.getPantherID() == pantherIDInput) {
+                List<Long> dateID = Arrays.asList(a.getDateID());
+                Iterable<DateAttend> dateAttendForAttendance = dateAttendRepository.findAllById(dateID);
+                Iterator<DateAttend> b = dateAttendForAttendance.iterator();
+                while (b.hasNext()) {
+                    DateAttend currentDate = b.next();
+                    if (currentDate.getAttended().equals("no")) {
+                        d.add(currentDate);
+                    }
+                }
+            }
+        }
+        return (ArrayList<DateAttend>) d;
+    }
 
 }

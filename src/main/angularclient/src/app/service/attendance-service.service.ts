@@ -7,9 +7,11 @@ import { Observable } from 'rxjs';
 export class AttendanceServiceService {
  
   private datesUrl: string;
+  private sessionUrl: string;
  
   constructor(private http: HttpClient) {
     this.datesUrl = 'http://localhost:8080/viewattendancedate';
+    this.sessionUrl = 'http://localhost:8080/session';
   }
  
   public findAll(): Observable<Attendance[]> {
@@ -17,6 +19,6 @@ export class AttendanceServiceService {
   }
  
   public save(attendance: Attendance) {
-    return this.http.post<Attendance>(this.datesUrl, attendance);
+    return this.http.post<Attendance>(this.sessionUrl, attendance);
   }
 }

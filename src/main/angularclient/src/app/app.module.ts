@@ -21,6 +21,7 @@ import {AttendanceComponent} from './attendance/attendance.component';
 import {SessionComponent} from './session/session.component';
 import { CommonModule } from '@angular/common';
 import { DatePipe } from '@angular/common';
+import { ViewStudentAttendanceComponent } from './view-student-attendance/view-student-attendance.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { DatePipe } from '@angular/common';
     RegisterComponent,
     AttendanceComponent,
     SessionComponent,
+    ViewStudentAttendanceComponent,
 
   ],
   imports: [

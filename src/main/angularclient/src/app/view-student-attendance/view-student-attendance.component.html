@@ -1,0 +1,29 @@
+<div align="center" *ngIf="successMessage">
+  <div class="col-xs-12">
+    <p class="alert alert-success">
+      Successful check-in for {{pantherID}}
+    </p>
+  </div>
+</div>
+<div align="center">
+    <h2 class="card-title text-center text-black py-2">View Attendance for Student</h2>
+  </div>
+  <div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Dates Absent</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let date of datesAbsent">
+            <td> {{ date.date }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <button (click)="confirm()" type="submit"
+                  class="btn btn-info">Confirm + Check In Next Student</button>
+    </div>
+  </div>
+  
