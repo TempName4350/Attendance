@@ -14,7 +14,7 @@ import com.opencsv.bean.CsvBindByPosition;
 @Table(name="dateAttend")
 public class DateAttend {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     @Column(name="dateID")
     private final long dateID;

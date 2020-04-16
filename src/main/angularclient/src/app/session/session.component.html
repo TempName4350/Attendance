@@ -1,16 +1,20 @@
+<div align="center" *ngIf="failureMessage">
+  <div class="col-xs-12">
+    <p class="alert alert-danger">
+        Error checking in {{PantherID}}. Please try again.
+    </p>
+  </div>
+</div>
 <h2>Please Enter Your Panther ID</h2>
 <form [formGroup]="SigninForm" (ngSubmit)="onSubmit()">
-  <div class="form-group">
-    <label for="PantherID">PantherID</label>
-    <input type="number" formControlName="PantherID" class="form-control" />
-    </div>
-
-<div class="form-group">
-  <button [disabled]="loading" class="btn btn-primary">
-    <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
-    Submit
-  </button>
-  <a (click)="check()" class="btn btn-link">End Session</a>
-
-</div>
+    <label for="PantherID">PantherID:</label>
+    <br>
+    <input formControlName="PantherID" placeholder="Enter PantherID" id="PantherID" required/>
+    <br>
+    <br>
+    <button type="submit" [disabled]="!PantherID" [disabled]="loading" class="btn btn-primary">
+      <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+      Submit
+    </button>
+    <a (click)="check()" class="btn btn-link">End Session</a>
 </form>

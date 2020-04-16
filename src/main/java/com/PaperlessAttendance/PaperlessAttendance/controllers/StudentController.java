@@ -54,6 +54,47 @@ public class StudentController {
         this.attendanceRepository = attendanceRepository;
     }
 
+    @PostMapping("/addabsences")
+    public void addStudentAbsences (@RequestBody String dateID) {
+        Long presentDateID = Long.parseLong(dateID);
+        Long absentDateID = presentDateID + 1;
+        // go through all panther IDs 
+        Iterable<Student> studentIterable = studentRepository.findAll();
+        Iterator<Student> i = studentIterable.iterator(); 
+        while (i.hasNext())  { // go through students
+            boolean isPresent = false;
+            Long attendID = 0L;
+            Student s = i.next();
+            Iterable<Attendance> attendanceForID = attendanceRepository.findAll();
+            Iterator<Attendance> h = attendanceForID.iterator();
+            // go through attendance records
+            while (h.hasNext()) {
+                Attendance a = h.next();
+                // if the date ID doesn't match
+                if (s.getPantherID() == a.getPantherID()) {
+                    //is the student attendance record
+                    if (a.getDateID() == presentDateID) {
+                        isPresent = true; // the student is present    
+                    }
+                }
+            } // exit attendance
+            Iterable<Attendance> attendance = attendanceRepository.findAll();
+            Iterator<Attendance> j = attendance.iterator();
+            // go through attendance records to get attend ID
+            while (j.hasNext()) {
+                Attendance a = j.next();
+                if (a.getAttendID() > attendID) {
+                    attendID = a.getAttendID();   
+                }
+            } // exit attendance
+
+            if (isPresent == false) {
+                Attendance newAbsence = new Attendance(attendID + 1, s.getPantherID(), absentDateID);
+                attendanceRepository.save(newAbsence);
+            }
+        }
+    }
+
     @GetMapping("/users")
     public List<Student> getStudents() {
         return (List<Student>) studentRepository.findAll();

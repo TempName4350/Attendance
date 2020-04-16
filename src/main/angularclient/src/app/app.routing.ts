@@ -11,6 +11,7 @@ import { AuthGuard } from './_helpers';
 import {RegisterComponent} from './register/register.component';
 import {AttendanceComponent} from './attendance/attendance.component';
 import {SessionComponent} from './session/session.component';
+import {ViewStudentAttendanceComponent} from './view-student-attendance/view-student-attendance.component';
 
 
 const routes: Routes = [
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'attendance', component: AttendanceComponent, canActivate: [AuthGuard]},
   { path: 'session', component: SessionComponent, canActivate: [AuthGuard]},
+  { path: 'viewstudentattendance', component: ViewStudentAttendanceComponent},
 
   { path: '**', redirectTo: 'home' }
 

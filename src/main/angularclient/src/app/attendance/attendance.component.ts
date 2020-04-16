@@ -31,9 +31,10 @@ export class AttendanceComponent implements OnInit {
                     maxDateID = element.dateID;
                 }
             });
+
             // declare new dateAttend record - 
             let newDateAttendPresent = new DateAttend();
-            newDateAttendPresent.dateID = maxDateID + 1;
+            newDateAttendPresent.dateID = maxDateID+ 1;
             newDateAttendPresent.attended = "yes";
             newDateAttendPresent.date = this.currentDate;
     
@@ -43,8 +44,8 @@ export class AttendanceComponent implements OnInit {
             newDateAttendAbsent.date = this.currentDate;
     
             this.dateAttendService.save(newDateAttendPresent).subscribe(data => {
-            });
-            this.dateAttendService.save(newDateAttendAbsent).subscribe(data => {
+                this.dateAttendService.save(newDateAttendAbsent).subscribe(data => {
+                });
             });
             this.router.navigate(['/session', {dateID: newDateAttendPresent.dateID}]);
         });

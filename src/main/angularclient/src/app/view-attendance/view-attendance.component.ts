@@ -24,6 +24,7 @@ export class ViewAttendanceComponent implements OnInit {
     this.dateAttendService.findAll().subscribe(data => {
       // get all dates
       this.dates = data;
+      console.log(data);
     });
   }
 }
