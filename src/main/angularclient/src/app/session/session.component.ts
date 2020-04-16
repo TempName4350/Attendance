@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, FormControl,Validators} from '@angular/forms';
 import {Router} from '@angular/router';
-import { HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams, HttpErrorResponse} from '@angular/common/http';
 import { Attendance } from '../model/attendance';
 import {ActivatedRoute} from "@angular/router"
 import { AttendanceServiceService } from '../service/attendance-service.service';
@@ -81,7 +81,7 @@ export class SessionComponent implements OnInit {
         console.log(newAttendance)
         this.router.navigate(['/viewstudentattendance', {pantherID: this.PantherID, dateID: this.dateID, successMessage: "true"}]);
       },
-      err => {
+      (err:Error) => {
         this.router.navigate(['/session', {dateID: this.dateID, failureMessage: 'true'}]);
       });
   });

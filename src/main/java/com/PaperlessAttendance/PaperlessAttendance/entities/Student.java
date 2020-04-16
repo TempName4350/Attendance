@@ -19,7 +19,6 @@ import com.PaperlessAttendance.PaperlessAttendance.repositories.DateAttendReposi
 @Table(name="student")
 public class Student {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
 
     @Column(name="pantherID")
     @CsvBindByPosition(position = 1)
