@@ -17,7 +17,11 @@ import java.util.Iterator;
 import java.io.BufferedWriter;
 import java.io.OutputStreamWriter;
 
+
 import com.fasterxml.jackson.databind.MappingIterator;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import com.opencsv.CSVWriter;
@@ -174,7 +178,7 @@ public class StudentController {
     }
 
     @RequestMapping(value="/uploadstudents", method = RequestMethod.POST) 
-    public void uploadFile(@RequestParam("file") MultipartFile file) {
+    public ResponseEntity<?> uploadFile(@RequestParam("file") MultipartFile file) {
         try {
             if (file != null) {
                 System.out.println(file.getOriginalFilename());
@@ -194,9 +198,11 @@ public class StudentController {
                 System.out.println(allValues.get(i) + " has been uploaded");
                 studentRepository.save(allValues.get(i));
             }
+            return new ResponseEntity<>("Successful upload!", HttpStatus.OK);
         } catch (Exception e) {
             System.out.println("AN ERROR HAS OCCURRED - ");
             System.out.println(e);
+            return new ResponseEntity<>("Could not upload students. Please try again - the file format may be invalid.", HttpStatus.BAD_REQUEST);
         }
     }
 }

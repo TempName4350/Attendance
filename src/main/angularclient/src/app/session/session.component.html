@@ -1,7 +1,7 @@
 <div align="center" *ngIf="failureMessage">
   <div class="col-xs-12">
     <p class="alert alert-danger">
-        Error checking in {{PantherID}}. Please try again.
+        Invalid PantherID has been entered. Please re-enter a valid one.
     </p>
   </div>
 </div>
@@ -12,7 +12,7 @@
     <input formControlName="PantherID" placeholder="Enter PantherID" id="PantherID" required/>
     <br>
     <br>
-    <button type="submit" [disabled]="!PantherID" [disabled]="loading" class="btn btn-primary">
+    <button type="submit" [disabled]="SigninForm.invalid" class="btn btn-primary">
       <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
       Submit
     </button>

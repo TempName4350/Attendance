@@ -25,12 +25,13 @@ export class UploadStudentsComponent implements OnInit {
     let formData = new FormData();
     formData.append('file', this.fileToUpload); // Append file to formdata
     this.http.post('/uploadstudents', formData, {
-      headers: new HttpHeaders()
+      headers: new HttpHeaders(),
+      responseType: 'text'
     }).subscribe(
-      data => {
+      (response) => {
         this.router.navigate(['/users', {uploadSuccess: 'true' }]);
       },
-      err => {
+      (error) => {
         this.router.navigate(['/users',  {uploadFailure: 'true' }]);
       }
     );
