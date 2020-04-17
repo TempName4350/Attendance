@@ -19,12 +19,9 @@ export class ViewAttendanceComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.route);
-  
     this.dateAttendService.findAll().subscribe(data => {
       // get all dates
       this.dates = data;
-      console.log(data);
     });
   }
 }

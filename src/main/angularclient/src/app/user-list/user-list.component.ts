@@ -18,8 +18,6 @@ export class UserListComponent implements OnInit {
   }
  
   ngOnInit() {
-    console.log(this.route);
-
     if(this.route.snapshot.params.uploadSuccess !== undefined && this.route.snapshot.params.uploadSuccess === 'true') {
       this.showSuccessMsg = true;
       this.showErrorMsg = false;

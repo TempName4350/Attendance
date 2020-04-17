@@ -22,15 +22,11 @@ export class ViewAttendanceDateComponent implements OnInit {
   constructor(private http: HttpClient, private attendanceService: AttendanceServiceService,  private dateAttendService: DateAttendServiceService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    console.log(this.route);
-
     let attendances = this.getPartners().then(data => {
       return data;
     }).then (data => {
       this.hey = data
-      console.log(data)
     })
-    console.log(attendances)
     this.attendanceDateID = this.route.snapshot.params.attendanceDateID;
     this.dateString = this.route.snapshot.params.dateString;
   }
