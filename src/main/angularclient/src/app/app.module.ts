@@ -39,6 +39,7 @@ import { ViewStudentAttendanceComponent } from './view-student-attendance/view-s
     SessionComponent,
     ViewStudentAttendanceComponent,
 
+
   ],
   imports: [
     BrowserModule,
@@ -57,7 +58,7 @@ import { ViewStudentAttendanceComponent } from './view-student-attendance/view-s
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 
-    fakeBackendProvider ],
+    fakeBackendProvider, ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

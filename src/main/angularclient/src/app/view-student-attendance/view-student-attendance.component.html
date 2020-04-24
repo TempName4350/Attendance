@@ -1,3 +1,12 @@
+<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" >
+  <div class="navbar-nav" >
+    <a class="nav-item nav-link" routerLink="/home">Home</a>
+    <a class="nav-item nav-link" (click)="logout()">Logout</a>
+  </div>
+</nav>
+
+
 <div align="center" *ngIf="successMessage">
   <div class="col-xs-12">
     <p class="alert alert-success">
@@ -26,4 +35,3 @@
                   class="btn btn-info">Confirm + Check In Next Student</button>
     </div>
   </div>
-  
