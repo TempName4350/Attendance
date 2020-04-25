@@ -3,10 +3,11 @@ import { Attendance } from '../model/attendance';
 import { AttendanceServiceService } from '../service/attendance-service.service';
 import { DateAttend } from '../model/dateAttend';
 import { DateAttendServiceService } from '../service/dateAttend-service.service';
-import {Router} from "@angular/router"
-import { Observable } from  "rxjs";
-import {ActivatedRoute} from "@angular/router"
+import {Router} from '@angular/router';
+import { Observable } from  'rxjs';
+import {ActivatedRoute} from '@angular/router';
 import { HttpClient, HttpHeaders, HttpParams, HttpErrorResponse} from '@angular/common/http';
+import {AuthenticationService} from "../_services";
 
 @Component({
   selector: 'app-view-attendance',
@@ -15,7 +16,18 @@ import { HttpClient, HttpHeaders, HttpParams, HttpErrorResponse} from '@angular/
 })
 export class ViewAttendanceComponent implements OnInit {
   dates: DateAttend[];
-  constructor(private http: HttpClient, private attendanceService: AttendanceServiceService,  private dateAttendService: DateAttendServiceService, private router: Router, private route: ActivatedRoute) {
+  currentUser: any;
+
+  constructor(private http: HttpClient,
+              private attendanceService: AttendanceServiceService,
+              private dateAttendService: DateAttendServiceService,
+              private router: Router,
+              private route: ActivatedRoute,
+              private authenticationService: AuthenticationService
+
+  ) {
+    this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
+
   }
 
   ngOnInit() {
@@ -23,5 +35,10 @@ export class ViewAttendanceComponent implements OnInit {
       // get all dates
       this.dates = data;
     });
+  }
+
+  logout() {
+    this.authenticationService.logout();
+    this.router.navigate(['/login']);
   }
 }

@@ -3,10 +3,11 @@ import { Attendance } from '../model/attendance';
 import { AttendanceServiceService } from '../service/attendance-service.service';
 import { DateAttend } from '../model/dateAttend';
 import { DateAttendServiceService } from '../service/dateAttend-service.service';
-import {Router} from "@angular/router"
-import { Observable } from  "rxjs";
-import {ActivatedRoute} from "@angular/router"
+import {Router} from '@angular/router';
+import { Observable } from  'rxjs';
+import {ActivatedRoute} from '@angular/router';
 import { HttpClient, HttpHeaders, HttpParams, HttpErrorResponse} from '@angular/common/http';
+import {AuthenticationService} from "../_services";
 
 @Component({
   selector: 'app-view-attendance-date',
@@ -17,16 +18,27 @@ export class ViewAttendanceDateComponent implements OnInit {
   attendances: Attendance[];
   dateString: String;
   attendanceDateID: Number;
-  hey: {}
+  hey: {};
+  currentUser: any;
 
-  constructor(private http: HttpClient, private attendanceService: AttendanceServiceService,  private dateAttendService: DateAttendServiceService, private router: Router, private route: ActivatedRoute) { }
+  constructor(private http: HttpClient,
+              private attendanceService: AttendanceServiceService,
+              private dateAttendService: DateAttendServiceService,
+              private router: Router,
+              private route: ActivatedRoute,
+              private authenticationService: AuthenticationService
+
+  ) {
+    this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
+
+  }
 
   ngOnInit(): void {
-    let attendances = this.getPartners().then(data => {
+    const attendances = this.getPartners().then(data => {
       return data;
     }).then (data => {
-      this.hey = data
-    })
+      this.hey = data;
+    });
     this.attendanceDateID = this.route.snapshot.params.attendanceDateID;
     this.dateString = this.route.snapshot.params.dateString;
   }
@@ -39,5 +51,10 @@ export class ViewAttendanceDateComponent implements OnInit {
         resolve(this.attendances);
       });
     });
+  }
+
+  logout() {
+    this.authenticationService.logout();
+    this.router.navigate(['/login']);
   }
 }
